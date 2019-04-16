@@ -1,0 +1,74 @@
+
+body {
+    background-color: #fdfdfd;
+    text-align: center;
+  }
+  
+      .spinner {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;}
+       .ball {
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      background-color: #509BD9;
+      border-radius: 50%;
+      display: inline-block;
+      animation: motion 3s cubic-bezier(.07,.5,.53,.88) infinite;
+      opacity: .7;
+    }
+        .ball1 {
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      background-color: #841af9;
+      border-radius: 50%;
+      display: inline-block;
+      animation: motion 3s cubic-bezier(.07,.5,.53,.88) infinite;
+      opacity: .7;
+    }  .ball2 {
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      background-color: #21Fe3d;
+      border-radius: 50%;
+      display: inline-block;
+      animation: motion 3s cubic-bezier(.07,.5,.53,.88) infinite;
+      opacity: .7;
+    }
+  
+  
+      .spinner p{
+    color: #509BD9;
+    opacity: .8;
+    margin-top: 10px;
+    font-family: "Open sans";
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+  
+  @keyframes motion {
+    0% {
+      transform: translateX(-100vh) scale(1);
+    }
+    25% {
+      transform: translateX(-50vh) scale(0.3);
+    }
+    50% {
+      transform: translateX(0) scale(1);
+    }
+    75% {
+      transform: translateX(50vh) scale(0.3);
+    }
+    100% {
+      transform: translateX(100vh) scale(1);
+    }
+  }
+  
